@@ -1,6 +1,8 @@
 import founderImg from '../assets/founder.png';
 import directorImg from '../assets/director.png';
 import testingImg from '../assets/structural_testing.png';
+import blueprintImg from '../assets/structural_blueprint.png';
+import landscapeImg from '../assets/landscape_plan.png';
 
 export const servicesData = [
   {
@@ -47,7 +49,7 @@ export const servicesData = [
     id: 'structural-engineering',
     title: 'Structural Engineering',
     icon: 'Activity',
-    image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&w=800&q=80',
+    image: blueprintImg,
     description: 'Advanced structural calculations, seismic analysis, and load-bearing designs ensuring lifetime safety.',
     details: 'Our engineers leverage finite element analysis and structural modeling tools to plan stable, earthquake-resistant skeletons. We specialize in post-tensioned slabs, composite structures, and complex wind-load designs.'
   },
@@ -71,7 +73,7 @@ export const servicesData = [
     id: 'landscape-planning',
     title: 'Landscape Planning',
     icon: 'Trees',
-    image: 'https://images.unsplash.com/photo-1558661091-5cc7b64e482d?auto=format&fit=crop&w=800&q=80',
+    image: landscapeImg,
     description: 'Harmonious outdoor environments incorporating native plants, water elements, and stone walkways.',
     details: 'We believe exterior spaces should merge seamlessly with interior views. Our landscape architects design premium gardens, infinity pool surroundings, outdoor lounges, and smart irrigation layouts that mature beautifully.'
   },
