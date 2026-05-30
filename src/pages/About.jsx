@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { officeGallery } from '../utils/mockData';
+import { teamMembers, officeGallery } from '../utils/mockData';
 import { Target, Compass, Award, ShieldCheck, HeartHandshake } from 'lucide-react';
 import founder from '../assets/founder.png';
 
@@ -135,10 +135,50 @@ export default function About() {
             </div>
           ))}
         </div>
+      </section>      {/* Executive Leadership Section */}
+      <section className="py-24 bg-charcoal-dark border-t border-b border-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          <div className="text-center space-y-3">
+            <span className="text-xs font-bold tracking-[0.25em] text-gold-accent uppercase block">
+              Core Leadership
+            </span>
+            <h2 className="text-3xl font-bold uppercase tracking-wider text-white font-serif">
+              Board of Directors
+            </h2>
+            <p className="text-sm text-gray-400 max-w-2xl mx-auto font-light">
+              Meet the executive leadership directing Nasr Infrastructure’s engineering integrity and organic growth.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            {teamMembers.map((member) => (
+              <div 
+                key={member.name}
+                className="group glassmorphism rounded-sm overflow-hidden border border-gray-800 text-center p-8 space-y-5 hover:border-gold-accent/20 transition-all duration-300"
+              >
+                <div className="h-48 w-48 mx-auto rounded-full overflow-hidden border-2 border-gray-850 bg-[#161616] group-hover:border-gold-accent transition-colors duration-500">
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                </div>
+                <div className="space-y-1">
+                  <h3 className="text-xl font-bold text-white font-serif uppercase tracking-wide">
+                    {member.name}
+                  </h3>
+                  <p className="text-xs text-gold-accent font-semibold tracking-widest uppercase">
+                    {member.role}
+                  </p>
+                </div>
+                <p className="text-xs text-gray-400 font-light leading-relaxed">
+                  {member.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
-
-
-
       {/* Office & Worksite Gallery */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         <div className="text-center space-y-3">

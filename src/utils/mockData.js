@@ -1,4 +1,5 @@
 import founderImg from '../assets/founder.png';
+import directorImg from '../assets/director.png';
 
 export const servicesData = [
   {
@@ -345,15 +346,9 @@ export const teamMembers = [
     image: founderImg
   },
   {
-    name: 'Samanth Sterling',
-    role: 'Chief Architect & Head of Design',
-    description: 'Award-winning architect specialized in organic modernism, light structures, and high-performance glass facades.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=240&q=80'
-  },
-  {
-    name: 'Vikram Chawla',
-    role: 'Director of Structural Operations',
-    description: 'Specialist in high-rise structural foundations, post-tensioned concrete, and seismic retrofitting design systems.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=240&q=80'
+    name: 'Er. Syed Misbahuddin Ahmed',
+    role: 'Director',
+    description: 'A visionary engineering director coordinating structural designs, project management timelines, and site operations for landmark residential and commercial developments.',
+    image: directorImg
   }
 ];
