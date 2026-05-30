@@ -342,7 +342,7 @@ export const teamMembers = [
   {
     name: 'Sanaullah Khan',
     role: 'Founder & CEO',
-    description: 'An entrepreneur and structural planner with 22 years of high-rise commercial and luxury villa experience across India and international markets.',
+    description: 'An entrepreneur and structural planner with 3 years of high-rise commercial and luxury villa experience across India and international markets.',
     image: founderImg
   },
   {
