@@ -237,15 +237,7 @@ export default function Admin() {
             </button>
           </form>
 
-          {/* Quick Notice */}
-          <div className="mt-8 pt-4 border-t border-gray-900 text-center">
-            <span className="text-[10px] text-gray-600 block uppercase font-bold tracking-widest">
-              Demo Credentials:
-            </span>
-            <span className="text-[11px] text-gold-accent font-semibold block mt-1">
-              nasr.infra@gmail.com / sanaullah@2002
-            </span>
-          </div>
+
         </div>
       </div>
     );
