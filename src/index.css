@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-accent: #d4af37;
+  --color-gold-hover: #b8860b;
+  --color-gold-light: #f3e5ab;
+  --color-charcoal-black: #121212;
+  --color-charcoal-dark: #0a0a0a;
+  --color-charcoal-light: #1e1e1e;
+  --color-steel-gray: #2d2d2d;
+  --color-steel-light: #7c7c7c;
+  --color-steel-border: #e5e5e5;
+  --color-deep-blue: #002244;
+  --color-deep-blue-light: #003366;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2d2d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Dark Mode support and Base Reset */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+/* Dark/Light mode base configuration classes */
+.theme-dark {
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+}
+
+.theme-light {
+  background-color: #fbfbfb;
+  color: #121212;
+}
+
+/* Premium custom styling classes */
+.glassmorphism {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glassmorphism-light {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(18, 18, 18, 0.08);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #f3e5ab 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #f3e5ab 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark-gradient {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1e1e1e 100%);
+}
+
+/* Hide default scrollbar on specific containers if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

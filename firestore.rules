@@ -1,0 +1,38 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: Checks if user is authenticated
+    function isAdmin() {
+      return request.auth != null;
+    }
+
+    // inquiries: Public can submit (create), only Admin can read, update, or delete
+    match /inquiries/{inquiryId} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // portfolios (projects, elevations, services, testimonials): Public can read, only Admin can write
+    match /projects/{projectId} {
+      allow read: if true;
+      allow write, update, delete: if isAdmin();
+    }
+
+    match /elevations/{elevationId} {
+      allow read: if true;
+      allow write, update, delete: if isAdmin();
+    }
+
+    match /services/{serviceId} {
+      allow read: if true;
+      allow write, update, delete: if isAdmin();
+    }
+
+    match /testimonials/{testimonialId} {
+      allow read: if true;
+      allow write, update, delete: if isAdmin();
+    }
+  }
+}
