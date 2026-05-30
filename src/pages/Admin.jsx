@@ -199,7 +199,7 @@ export default function Admin() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@nasr.com"
+                  placeholder="nasr.infra@gmail.com"
                   className="w-full pl-10 pr-4 py-3 bg-[#121212] border border-gray-800 rounded-sm text-white focus:outline-none focus:border-gold-accent transition-colors"
                 />
               </div>
@@ -243,7 +243,7 @@ export default function Admin() {
               Demo Credentials:
             </span>
             <span className="text-[11px] text-gold-accent font-semibold block mt-1">
-              admin@nasr.com / admin123
+              nasr.infra@gmail.com / sanaullah@2002
             </span>
           </div>
         </div>

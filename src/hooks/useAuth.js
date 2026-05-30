@@ -39,10 +39,10 @@ export const useAuth = () => {
         return userCredential.user;
       } else {
         // Fallback checks
-        if (email === 'admin@nasr.com' && password === 'admin123') {
+        if (email === 'nasr.infra@gmail.com' && password === 'sanaullah@2002') {
           const mockUser = {
             uid: 'mock-admin-uid-12345',
-            email: 'admin@nasr.com',
+            email: 'nasr.infra@gmail.com',
             displayName: 'Nasr Admin (Offline)',
             isMock: true
           };
@@ -51,7 +51,7 @@ export const useAuth = () => {
           setLoading(false);
           return mockUser;
         } else {
-          throw new Error('Invalid credentials. For local preview, use admin@nasr.com and admin123');
+          throw new Error('Invalid credentials. For local preview, use nasr.infra@gmail.com and sanaullah@2002');
         }
       }
     } catch (err) {

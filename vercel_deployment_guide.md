@@ -81,7 +81,7 @@ To make sure the Contact Form and Admin Dashboard function on your live site, co
 2. Select the **Sign-in method** tab.
 3. Click **Email/Password**, toggle it to **Enabled**, and save.
 4. Go to **Users** ➜ **Add User**.
-5. Set email to: `admin@nasr.com`
-6. Set password to: `admin123` (or any custom password, update your login details accordingly).
+5. Set email to: `nasr.infra@gmail.com`
+6. Set password to: `sanaullah@2002` (which is your pre-coded admin credential).
 
 *Congratulations! Your Nasr Infrastructure application is now live on Vercel and fully syncs with Firestore database and Authentication secure logins!*
