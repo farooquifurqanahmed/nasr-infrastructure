@@ -105,7 +105,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wider text-xs">Telephone</h4>
-                  <p className="mt-1 text-gray-400 font-light">+91 90752 05258</p>
+                  <p className="mt-1 text-gray-400 font-light">+91 94031 03966</p>
                 </div>
               </div>
 
@@ -116,7 +116,7 @@ export default function Contact() {
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wider text-xs">Email Correspondence</h4>
                   <p className="mt-1 text-gray-400 font-light hover:text-gold-accent transition-colors cursor-pointer">
-                    Nasr.infra@gmail.com
+                    nasr.infra@gmail.com
                   </p>
                 </div>
               </div>
@@ -218,7 +218,7 @@ export default function Contact() {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+91 90752 05258"
+                      placeholder="+91 94031 03966"
                       className="w-full px-4 py-3 bg-[#161616] border border-gray-800 rounded-sm text-white focus:outline-none focus:border-gold-accent placeholder-gray-600 transition-colors"
                     />
                   </div>

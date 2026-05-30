@@ -157,12 +157,12 @@ export default function Footer({ setCurrentPage, onOpenConsultation }) {
               </li>
               <li className="flex items-center">
                 <Phone className="h-4.5 w-4.5 text-gold-accent mr-3.5 shrink-0" />
-                <span className="text-gray-300">+91 90752 05258</span>
+                <span className="text-gray-300">+91 94031 03966</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-4.5 w-4.5 text-gold-accent mr-3.5 shrink-0" />
                 <span className="text-gray-300 hover:text-gold-accent transition-colors cursor-pointer">
-                  Nasr.infra@gmail.com
+                  nasr.infra@gmail.com
                 </span>
               </li>
               <li className="flex items-start">

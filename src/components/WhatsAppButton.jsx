@@ -1,7 +1,7 @@
 import { MessageSquare, Phone } from 'lucide-react';
 
 export default function WhatsAppButton() {
-  const phoneNumber = '+919075205258'; // Replace with real company number
+  const phoneNumber = '+919403103966'; // Replace with real company number
   const message = encodeURIComponent('Hello Nasr Infrastructure team, I would like to schedule a consultation regarding an architectural/construction project.');
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${message}`;
 
