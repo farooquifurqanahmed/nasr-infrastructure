@@ -1,5 +1,6 @@
 import founderImg from '../assets/founder.png';
 import directorImg from '../assets/director.png';
+import testingImg from '../assets/structural_testing.png';
 
 export const servicesData = [
   {
@@ -301,7 +302,7 @@ export const officeGallery = [
     caption: 'Our engineers supervising deep foundations and structural safety.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&w=800&q=80',
+    image: testingImg,
     title: 'Precision Structural Testing',
     caption: 'Non-destructive strength testing on site concrete.'
   },
