@@ -51,7 +51,7 @@ export const useAuth = () => {
           setLoading(false);
           return mockUser;
         } else {
-          throw new Error('Invalid credentials. For local preview, use nasr.infra@gmail.com and sanaullah@2002');
+          throw new Error('Invalid email or password. Please try again.');
         }
       }
     } catch (err) {
